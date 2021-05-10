@@ -11,3 +11,4 @@ class BikeController < ApplicationController
   end
 
 end
+

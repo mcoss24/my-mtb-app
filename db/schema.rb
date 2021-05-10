@@ -10,6 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_05_10_142816) do
+
+  create_table "spots", force: :cascade do |t|
+    t.string "location"
+    t.boolean "winter"
+    t.boolean "spring"
+    t.boolean "summer"
+    t.boolean "fall"
+    t.boolean "desert"
+    t.boolean "medditerannean"
+    t.boolean "temperate"
+    t.boolean "downhill"
+    t.boolean "cross_country"
+    t.boolean "west"
+    t.boolean "mountain"
+    t.boolean "east"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end

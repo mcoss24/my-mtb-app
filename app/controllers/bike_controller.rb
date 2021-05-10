@@ -7,6 +7,9 @@ class BikeController < ApplicationController
   def destination
     
     @locale = params.fetch("destination")
+
+    @spot = Spot.all
+
     render({:template => "bike_templates/destination.html.erb"})
   end
 

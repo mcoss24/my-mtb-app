@@ -25,7 +25,7 @@ namespace :slurp do
       t.mountain = row['Mountain']
       t.east = row['East']
       t.save
-      puts "#{t.location}, #{t.winter} saved"
+      #puts "#{t.location}, #{t.winter} saved"
     end
     puts "There are now #{Spot.count} rows in the spots table"
 

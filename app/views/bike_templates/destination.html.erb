@@ -15,6 +15,11 @@
   <a href = "/">Home</a>
   <a href = "/your next mountain bike vacation">Destinations</a>
   <h1> Welcome to <%= @locale %>! </h1>
+  <% @spot.each do |place| %>
+    <div>
+    <%=p place.location %>
+    </div>
+  <%end%>
 
 </body>
 </html>

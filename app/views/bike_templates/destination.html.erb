@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>All the Destinations Listed</title>
-
-  <meta charset="utf-8">
-
-  <link rel="stylesheet" href="/bootstrap.css">
-
-</head>
-
-<body>
-
-  <a href = "/">Home</a>
-  <a href = "/your next mountain bike vacation">Destinations</a>
   <h1> Welcome to <%= @locale %>! </h1>
   <% @spot.each do |place| %>
     <div>
-    <%=p place.location %>
+    <%=place.location %>
     </div>
-  <%end%>
-
-</body>
-</html>

@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html>
 
-
-  <a href = "/">Home</a>
-  <a href = "/your next mountain bike vacation">Destinations</a>
-
-  <h1>
+<h1>
   Plan your ideal mountain biking trip
-  </h1>
+</h1>
 
-  <p>
+<p>
   Please select from the options below
-  </p>
+</p>
 
-</html>
+<form action="/action_page.php">
+  <label for="winter">Winter</label>
+  <input type="radio" name="season" id="winter" value="true"><br>
+  <label for="spring">Spring</label>
+  <input type="radio" name="season" id="spring" value="true"><br>
+  <label for="summer">Summer</label>
+  <input type="radio" name="season" id="summer" value="true"><br>
+  <label for="fall">Fall</label>
+  <input type="radio" name="season" id="fall" value="true"><br><br>
+  <input type="submit" value="Submit">
+</form>
+

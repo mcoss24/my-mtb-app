@@ -9,7 +9,6 @@
 
 <form action="/action_page.php">
 <h3>Season</h3>
-
   <label for="winter">Winter</label>
   <input type="radio" name="season" id="winter" value="true"><br>
   <label for="spring">Spring</label>
@@ -18,7 +17,6 @@
   <input type="radio" name="season" id="summer" value="true"><br>
   <label for="fall">Fall</label>
   <input type="radio" name="season" id="fall" value="true"><br><br>
-
 
 <p></p>
 <h3>Location</h3>
@@ -40,11 +38,14 @@
 
 <p></p>
 <h3>Type</h3>
-  <label for="desert">Desert</label>
-  <input type="radio" name="climate" id="desert" value="true"><br>
-  <label for="temperate">Temperate</label>
-  <input type="radio" name="climate" id="temperate" value="true"><br>
+  <label for="downhill">Downhill</label>
+  <input type="radio" name="type" id="downhill" value="true"><br>
+  <label for="cross country">Cross Country</label>
+  <input type="radio" name="type" id="cross country" value="true"><br>
 
-
+<p></p>
 <input type="submit" value="Submit">
 </form>
+
+
+<!-- Parameters: {"season"=>"true", "location"=>"true", "climate"=>"true", "type"=>"true", "destination"=>"action_page"} -->

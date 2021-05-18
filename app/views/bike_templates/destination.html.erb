@@ -2,9 +2,20 @@
 
 
 <table border=1>
-  <% @spot.each do |place| %>
-    <div>
-    <%=place.location %>
-    </div>
-  <%end%>
+  <tr>  
+    <th>Location</th>
+    <th>Links</th>
+  </tr>
+  <tr>
+    <% @spot.each do |place| %>
+    <td>    
+      <%=place.location %>
+    </td>
+  </tr>         
+    <%end%>
+  <tr>
+    
+
+  </tr>
+      
 </table>

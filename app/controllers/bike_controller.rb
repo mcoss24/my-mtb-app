@@ -1,6 +1,11 @@
 class BikeController < ApplicationController
 
   def index
+
+    
+    #Parameters: {"season"=>"true", "location"=>"true", "climate"=>"true", "type"=>"true", "destination"=>"action_page"}
+
+    
     render({:template => "bike_templates/index.html.erb"})
   end
 
